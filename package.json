@@ -1,0 +1,17 @@
+{
+  "name": "slotbaba-gaming-platform",
+  "version": "1.0.0",
+  "description": "Modern online gaming platform built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "gaming",
+    "tailwind",
+    "responsive",
+    "html5"
+  ],
+  "author": "Slotbaba",
+  "license": "MIT"
+}

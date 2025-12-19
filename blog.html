@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slotbaba Kayıt blog - Oyun ipuçları, haberler ve güncellemeler.">
+    <title>Blog - Slotbaba Kayıt | Oyun İpuçları ve Haberler</title>
+    <link rel="canonical" href="https://slotbabakayit.com/blog">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://slotbabakayit.com/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://slotbabakayit.com/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://slotbabakayit.com/images/apple-touch-icon.png" />
+    <style>
+        .page-hero{padding:150px 0 80px;background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:var(--white);text-align:center}
+        .page-hero h1{font-size:3.5rem;margin-bottom:1rem}
+        .blog-content{padding:6rem 0}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:2.5rem}
+        .blog-card{background:var(--white);border-radius:var(--border-radius);overflow:hidden;box-shadow:var(--shadow);transition:var(--transition)}
+        .blog-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}
+        .blog-image{height:250px;overflow:hidden}
+        .blog-image img{width:100%;height:100%;object-fit:cover;transition:var(--transition)}
+        .blog-card:hover .blog-image img{transform:scale(1.1)}
+        .blog-info{padding:2rem}
+        .blog-meta{display:flex;gap:1.5rem;margin-bottom:1rem;color:var(--gray);font-size:0.9rem}
+        .blog-title{font-size:1.5rem;color:var(--dark-color);margin-bottom:1rem}
+        .blog-excerpt{color:var(--gray);line-height:1.7;margin-bottom:1.5rem}
+        .blog-link{color:var(--primary-color);font-weight:600;display:inline-flex;align-items:center;gap:0.5rem}
+        @media(max-width:768px){.page-hero h1{font-size:2.5rem}.blog-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/" class="logo" title="Slotbaba Kayıt"><img src="/images/logo.png" alt="Slotbaba Kayıt" /></a>
+                    <button class="mobile-menu-toggle" aria-label="Menü"><span></span><span></span><span></span></button>
+                    <ul class="nav-menu">
+                        <li><a href="/" title="Ana Sayfa">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda" title="Hakkımızda">Hakkımızda</a></li>
+                        <li><a href="oyunlar" title="Oyunlar">Oyunlar</a></li>
+                        <li><a href="platform" title="Platform">Platform</a></li>
+                        <li><a href="ozellikler" title="Özellikler">Özellikler</a></li>
+                        <li><a href="sss" title="SSS">SSS</a></li>
+                        <li><a href="blog" title="Blog" class="active">Blog</a></li>
+                        <li><a href="iletisim" title="İletişim">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 title="Blog"><i class="fas fa-blog"></i> Kayıt Blog</h1>
+            <p>Kayıt platformundan oyun haberleri, kayıt ipuçları ve kayıt güncellemeleri</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop" alt="Tetris stratejileri" title="Tetris İpuçları" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 15 Kasım 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Tetris Stratejileri">Tetris Oynarken Dikkat Edilmesi Gerekenler</h2>
+                        <p class="blog-excerpt">Tetris oyununda başarılı olmanın püf noktaları. Blok yerleştirme stratejileri ve yüksek skor ipuçları.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=800&h=600&fit=crop" alt="Zeka oyunları faydaları" title="Zeka Oyunları" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 12 Kasım 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Zeka Oyunları">Zeka Oyunlarının Beyin Gelişimine Katkıları</h2>
+                        <p class="blog-excerpt">Düzenli zeka oyunu oynamanın bilimsel olarak kanıtlanmış faydaları ve beyin sağlığına etkileri.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop" alt="Yarış oyunları" title="Yarış Oyunları" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 8 Kasım 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Yarış Oyunları">Yarış Oyunlarında Hız ve Strateji Dengesi</h2>
+                        <p class="blog-excerpt">Yarış oyunlarında başarılı olmanın sırları. Hız kontrolü ve stratejik düşünme teknikleri.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=800&h=600&fit=crop" alt="Hafıza geliştirme" title="Hafıza Oyunları" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 5 Kasım 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Hafıza Geliştirme">Hafıza Oyunları ile Bellek Gücünü Artırın</h2>
+                        <p class="blog-excerpt">Hafıza oyunlarının bellek kapasitesini artırmadaki rolü ve en etkili oyun teknikleri.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop" alt="Online oyun güvenliği" title="Güvenlik" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 1 Kasım 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Online Güvenlik">Online Oyun Platformlarında Güvenlik Önlemleri</h2>
+                        <p class="blog-excerpt">Güvenli oyun deneyimi için dikkat edilmesi gerekenler ve kişisel veri koruma ipuçları.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop" alt="Mobil oyun" title="Mobil Oyunlar" loading="lazy">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 28 Ekim 2024</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h2 class="blog-title" title="Mobil Oyun">Mobil Cihazlarda Oyun Deneyimini İyileştirme</h2>
+                        <p class="blog-excerpt">Telefon ve tablet üzerinden en iyi oyun deneyimi için öneriler ve ayar tavsiyeleri.</p>
+                        <a href="#" class="blog-link" title="Devamını Oku">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3 class="footer-title"><img src="/images/logo.png" alt="Slotbaba Kayıt" /></h3>
+                        <p class="footer-description">Ücretsiz, güvenli ve eğlenceli online oyun platformu.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Hızlı Linkler</h4>
+                        <ul class="footer-links">
+                            <li><a href="/" title="Ana Sayfa">Ana Sayfa</a></li>
+                            <li><a href="hakkimizda" title="Hakkımızda">Hakkımızda</a></li>
+                            <li><a href="oyunlar" title="Oyunlar">Oyunlar</a></li>
+                            <li><a href="platform" title="Platform">Platform</a></li>
+                            <li><a href="ozellikler" title="Özellikler">Özellikler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Destek</h4>
+                        <ul class="footer-links">
+                            <li><a href="sss" title="Sıkça Sorulan Sorular">SSS</a></li>
+                            <li><a href="blog" title="Blog">Blog</a></li>
+                            <li><a href="iletisim" title="İletişim">İletişim</a></li>
+                            <li><a href="kullanim-sartlari" title="Kullanım Şartları">Kullanım Şartları</a></li>
+                            <li><a href="gizlilik-politikasi" title="Gizlilik Politikası">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Yasal</h4>
+                        <ul class="footer-links">
+                            <li><a href="cerez-politikasi" title="Çerez Politikası">Çerez Politikası</a></li>
+                            <li><a href="kvkk" title="KVKK Aydınlatma Metni">KVKK</a></li>
+                        </ul>
+                        <div class="footer-contact">
+                            <p title="E-posta Adresi">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d9d3cbdbc6f2c1deddc6d0d3d0d3d9d3cbdbc69cd1dddf">[email&#160;protected]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright" title="Telif Hakkı">
+                        &copy; 2024 Slotbaba Kayıt. Tüm hakları saklıdır.
+                    </p>
+                    <p class="footer-disclaimer">
+                        Bu platform casino, bahis veya kumar içeriği barındırmaz. Tüm oyunlar eğlence amaçlıdır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" ari

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slotbaba - Ücretsiz online oyun platformu. Puzzle, strateji, yarış ve eğlence oyunları. Kayıt olmadan hemen oyna!">
+    <meta name="keywords" content="online oyun, ücretsiz oyunlar, puzzle oyunları, tetris, strateji oyunları, eğlence">
+    <meta name="author" content="Slotbaba Gaming">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slotbaba.com/">
+    <meta property="og:title" content="Slotbaba - Ücretsiz Online Oyun Platformu">
+    <meta property="og:description" content="En eğlenceli oyunları ücretsiz oynayın. Puzzle, strateji, yarış ve daha fazlası!">
+    <meta property="og:image" content="https://slotbaba.com/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://slotbaba.com/">
+    <meta property="twitter:title" content="Slotbaba - Ücretsiz Online Oyun Platformu">
+    <meta property="twitter:description" content="En eğlenceli oyunları ücretsiz oynayın!">
+    <meta property="twitter:image" content="https://slotbaba.com/assets/images/twitter-image.jpg">
+
+    <title>Slotbaba - Ücretsiz Online Oyun Platformu | Eğlence ve Strateji Oyunları</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://slotbaba.com/">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#F7931E',
+                        accent: '#FFB84D',
+                        dark: '#2C3E50',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-gamepad text-3xl text-primary"></i>
+                        <span class="text-2xl font-bold text-dark">Slotbaba</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary transition font-medium">Ana Sayfa</a>
+                    <a href="games.html" class="text-dark hover:text-primary transition font-medium">Oyunlar</a>
+                    <a href="about.html" class="text-dark hover:text-primary transition font-medium">Hakkımızda</a>
+                    <a href="blog.html" class="text-dark hover:text-primary transition font-medium">Blog</a>
+                    <a href="contact.html" class="text-dark hover:text-primary transition font-medium">İletişim</a>
+                    <button class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg transition font-semibold">
+                        Hemen Oyna
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="index.html" class="block px-3 py-2 text-dark hover:bg-gray-100 rounded">Ana Sayfa</a>
+                <a href="games.html" class="block px-3 py-2 text-dark hover:bg-gray-100 rounded">Oyunlar</a>
+                <a href="about.html" class="block px-3 py-2 text-dark hover:bg-gray-100 rounded">Hakkımızda</a>
+                <a href="blog.html" class="block px-3 py-2 text-dark hover:bg-gray-100 rounded">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 text-dark hover:bg-gray-100 rounded">İletişim</a>
+                <button class="w-full bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg transition font-semibold mt-2">
+                    Hemen Oyna
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-primary via-secondary to-accent text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                        Eğlenceye <span class="text-yellow-300">Hazır Mısın?</span>
+                    </h1>
+                    <p class="text-xl text-gray-100">
+                        Yüzlerce ücretsiz oyun, sınırsız eğlence! Puzzle, strateji, yarış ve daha fazlası seni bekliyor.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl">
+                            <i class="fas fa-play mr-2"></i>
+                            Hemen Başla
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-bold text-lg transition">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Daha Fazla Bilgi
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-8 pt-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">500+</div>
+                            <div class="text-sm text-gray-200">Oyun</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">1M+</div>
+                            <div class="text-sm text-gray-200">Oyuncu</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">%100</div>
+                            <div class="text-sm text-gray-200">Ücretsiz</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=600&fit=crop" 
+                         alt="Gaming" 
+                         class="rounded-2xl shadow-2xl transform hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Neden Slotbaba?</h2>
+                <p class="text-xl text-gray-600">En iyi oyun deneyimi için her şey düşünüldü</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition group">
+                    <div class="bg-primary text-white w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-bolt text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">Hızlı ve Kolay</h3>
+                    <p class="text-gray-600">Kayıt olmadan, anında oynamaya başlayın. Karmaşık prosedürler yok!</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition group">
+                    <div class="bg-secondary text-white w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">%100 Güvenli</h3>
+                    <p class="text-gray-600">Verileriniz güvende, reklamsız ve güvenli oyun deneyimi.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition group">
+                    <div class="bg-accent text-white w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-mobile-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark">Her Cihazda</h3>
+                    <p class="text-gray-600">Telefon, tablet veya bilgisayar - istediğiniz yerden oynayın!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Games -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Popüler Oyunlar</h2>
+                <p class="text-xl text-gray-600">En çok oynanan oyunları keşfedin</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Game Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" 
+                             alt="Tetris" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Popüler
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-dark">Tetris Classic</h3>
+                        <p class="text-gray-600 mb-4">Klasik puzzle oyununun en iyi versiyonu</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm font-semibold">
+                                Oyna
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop" 
+                             alt="Racing" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Yeni
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-dark">Speed Racing</h3>
+                        <p class="text-gray-600 mb-4">Heyecan dolu yarış deneyimi</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm font-semibold">
+                                Oyna
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=400&h=300&fit=crop" 
+                             alt="Memory" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-dark">Memory Master</h3>
+                        <p class="text-gray-600 mb-4">Hafızanı test et, rekoru kır</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm font-semibold">
+                                Oyna
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=300&fit=crop" 
+                             alt="Strategy" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-dark">Chess Pro</h3>
+                        <p class="text-gray-600 mb-4">Stratejik düşünme oyunu</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm font-semibold">
+                                Oyna
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="games.html" class="inline-block bg-dark text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition font-bold text-lg">
+                    Tüm Oyunları Gör
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Eğlenceye Hemen Başla!</h2>
+            <p class="text-xl mb-8 text-gray-100">500+ oyun seni bekliyor. Kayıt olmadan, tamamen ücretsiz!</p>
+            <button class="bg-white text-primary hover:bg-gray-100 px-10 py-4 rounded-lg font-bold text-xl transition shadow-2xl">
+                <i class="fas fa-play-circle mr-2"></i>
+                Şimdi Oyna
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gamepad text-3xl text-primary"></i>
+                        <span class="text-2xl font-bold">Slotbaba</span>
+                    </div>
+                    <p class="text-gray-400">Ücretsiz, eğlenceli ve güvenli online oyun platformu.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hızlı Linkler</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Ana Sayfa</a></li>
+                        <li><a href="games.html" class="text-gray-400 hover:text-primary transition">Oyunlar</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition">Hakkımızda</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Destek</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition">İletişim</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">SSS</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Gizlilik</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Şartlar</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Bizi Takip Edin</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Slotbaba Gaming Platform. Tüm hakları saklıdır.</p>
+                <p class="mt-2 text-sm">Bu platform eğlence amaçlıdır. Sorumlu oyun oynayın.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-secondary transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top Button
+        const scrollTopButton = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopButton.classList.remove('hidden');
+            } else {
+                scrollTopButton.classList.add('hidden');
+            }
+        });
+        
+        scrollTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Slotbaba Gaming Platform",
+        "url": "https://slotbaba.com",
+        "description": "Ücretsiz online oyun platformu",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://slotbaba.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</body>
+</html>
