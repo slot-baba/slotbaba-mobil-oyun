@@ -211,9 +211,9 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👤 İletişim
 
-Proje Sahibi - [@yourusername](https://github.com/yourusername)
+Proje Sahibi - [@slot-baba](https://github.com/slot-baba)
 
-Proje Linki: [https://github.com/yourusername/slotbaba-gaming-platform](https://github.com/yourusername/slotbaba-gaming-platform)
+Proje Linki: [https://github.com/slot-baba/slotbaba-mobil-oyun](https://github.com/slot-baba/slotbaba-mobil-oyun)
 
 ## 🙏 Teşekkürler
 
